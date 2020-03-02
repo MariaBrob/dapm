@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Lab2</string>
+    <string name="title_activity_find_the_number">FindTheNumberActivity</string>
+</resources>
