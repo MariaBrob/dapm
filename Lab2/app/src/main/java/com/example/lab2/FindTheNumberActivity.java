@@ -52,10 +52,15 @@ public class FindTheNumberActivity extends AppCompatActivity {
         EditText g = (EditText) findViewById(R.id.guess_no);
         Integer guess_no = Integer.parseInt(g.getText().toString());
         Button btn = (Button) findViewById(R.id.guessButton);
+        Boolean x = true;
 
 
         String tt = Integer.toString(result);
         Log.d(TAG, tt);
+
+        if()
+        btn.setBackgroundColor(Color.parseColor("#0000FF"));
+
         if(guess_no > result) {
             Toast.makeText(FindTheNumberActivity.this,"Lower", Toast.LENGTH_LONG).show();
         } else {
@@ -63,9 +68,11 @@ public class FindTheNumberActivity extends AppCompatActivity {
                 Toast.makeText(FindTheNumberActivity.this,"Higher", Toast.LENGTH_LONG).show();
             } else {
                 Random r = new Random();
-                int low = 0;
-                int high = 10;
-                int result = r.nextInt(high-low) + low;
+                low = 0;
+                high = 10;
+                result = r.nextInt(high-low) + low;
+                tt = Integer.toString(result);
+
                 Log.d(TAG, tt);
 
                 btn.setBackgroundColor(Color.parseColor("#0000FF"));
