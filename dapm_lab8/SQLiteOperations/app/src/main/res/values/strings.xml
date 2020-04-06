@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SQLiteOperations</string>
+    <string name="delete" />
+</resources>
